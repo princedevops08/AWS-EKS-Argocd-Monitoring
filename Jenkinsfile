@@ -62,7 +62,7 @@ pipeline {
 
                         git add k8s/deployment.yml
                         git diff --cached --quiet || git commit -m "Updated image to ${IMAGE_TAG}"
-                        git push https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/KastroVKiran/Multi-Branch-Prod.git main
+                        git push https://${GIT_USERNAME}:${GIT_TOKEN}@github.com:princedevops08/AWS-EKS-Argocd-Monitoring.git main
                         """
                     }
                 }
