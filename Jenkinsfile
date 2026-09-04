@@ -47,7 +47,7 @@ pipeline {
             steps {
                 withCredentials([
                     usernamePassword(
-                        credentialsId: 'github',
+                        credentialsId: 'github-princedevops08-pat',
                         usernameVariable: 'GIT_USERNAME',
                         passwordVariable: 'GIT_TOKEN'
                     )
@@ -175,7 +175,7 @@ PY
             steps {
                 withCredentials([
                     usernamePassword(
-                        credentialsId: 'github',
+                        credentialsId: 'github-princedevops08-pat',
                         usernameVariable: 'GIT_USERNAME',
                         passwordVariable: 'GIT_TOKEN'
                     )
